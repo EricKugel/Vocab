@@ -1,0 +1,3324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function main() {
+            const terms = {};
+            let content = document.getElementById("content");
+            let rows = content.children;
+            var output = ""
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var latin = row.getElementsByClassName("hdw")[0].innerText;
+                latin = latin.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                var english = row.getElementsByClassName("eng")[0].innerText;
+                output += latin + ": " + english + "\n";
+            }
+            document.getElementById("output").innerText = output;
+        }
+        </script>
+    </head>
+    <body onload = "main();">
+        <div id = "output">
+
+        </div>
+        <table hidden>
+            <tbody id = "content">
+                <tr id="lin0">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">ātrium</td>
+                    <td class="eng">main room</td>
+                </tr>
+                <tr id="lin1">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">bibit</td>
+                    <td class="eng">drinks</td>
+                </tr>
+                <tr id="lin2">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">canis</td>
+                    <td class="eng">dog</td>
+                </tr>
+                <tr id="lin3">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">cibus</td>
+                    <td class="eng">food</td>
+                </tr>
+                <tr id="lin4">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">circumspectat</td>
+                    <td class="eng">looks round</td>
+                </tr>
+                <tr id="lin5">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">clāmat</td>
+                    <td class="eng">shouts</td>
+                </tr>
+                <tr id="lin6">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">coquus</td>
+                    <td class="eng">cook</td>
+                </tr>
+                <tr id="lin7">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">culīna</td>
+                    <td class="eng">kitchen</td>
+                </tr>
+                <tr id="lin8">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">dormit</td>
+                    <td class="eng">sleeps</td>
+                </tr>
+                <tr id="lin9">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">est</td>
+                    <td class="eng">is</td>
+                </tr>
+                <tr id="lin10">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">exit</td>
+                    <td class="eng">goes out</td>
+                </tr>
+                <tr id="lin11">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">familia</td>
+                    <td class="eng">household</td>
+                </tr>
+                <tr id="lin12">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">fīlius</td>
+                    <td class="eng">son</td>
+                </tr>
+                <tr id="lin13">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">furcifer</td>
+                    <td class="eng">scoundrel!</td>
+                </tr>
+                <tr id="lin14">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">hortus</td>
+                    <td class="eng">garden</td>
+                </tr>
+                <tr id="lin15">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">in</td>
+                    <td class="eng">in, on; into, onto</td>
+                </tr>
+                <tr id="lin16">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">intrat</td>
+                    <td class="eng">enters</td>
+                </tr>
+                <tr id="lin17">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">īrātus</td>
+                    <td class="eng">angry</td>
+                </tr>
+                <tr id="lin18">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">labōrat</td>
+                    <td class="eng">works</td>
+                </tr>
+                <tr id="lin19">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">lātrat</td>
+                    <td class="eng">barks</td>
+                </tr>
+                <tr id="lin20">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">māter</td>
+                    <td class="eng">mother</td>
+                </tr>
+                <tr id="lin21">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">mēnsa</td>
+                    <td class="eng">table</td>
+                </tr>
+                <tr id="lin22">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">pater</td>
+                    <td class="eng">father</td>
+                </tr>
+                <tr id="lin23">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">pestis</td>
+                    <td class="eng">pest, scoundrel</td>
+                </tr>
+                <tr id="lin24">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">salit</td>
+                    <td class="eng">leaps, jumps</td>
+                </tr>
+                <tr id="lin25">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">scrībit</td>
+                    <td class="eng">writes</td>
+                </tr>
+                <tr id="lin26">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">sedet</td>
+                    <td class="eng">sits</td>
+                </tr>
+                <tr id="lin27">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">servus</td>
+                    <td class="eng">slave</td>
+                </tr>
+                <tr id="lin28">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">stat</td>
+                    <td class="eng">stands</td>
+                </tr>
+                <tr id="lin29">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">stertit</td>
+                    <td class="eng">snores</td>
+                </tr>
+                <tr id="lin30">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">surgit</td>
+                    <td class="eng">gets up, rises</td>
+                </tr>
+                <tr id="lin31">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">tablīnum</td>
+                    <td class="eng">study</td>
+                </tr>
+                <tr id="lin32">
+                    <td class="stg">&nbsp;&nbsp;1</td>
+                    <td class="hdw">triclīnium</td>
+                    <td class="eng">dining-room</td>
+                </tr>
+                <tr id="lin33">
+                    <td class="stg">&nbsp;&nbsp;1*</td>
+                    <td class="hdw">via</td>
+                    <td class="eng">street</td>
+                </tr>
+                <tr id="lin34">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">amīcus</td>
+                    <td class="eng">friend</td>
+                </tr>
+                <tr id="lin35">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">ancilla</td>
+                    <td class="eng">slave-girl, maid</td>
+                </tr>
+                <tr id="lin36">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">anxius</td>
+                    <td class="eng">anxious</td>
+                </tr>
+                <tr id="lin37">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">argentārius</td>
+                    <td class="eng">banker</td>
+                </tr>
+                <tr id="lin38">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">audit</td>
+                    <td class="eng">hears, listens to</td>
+                </tr>
+                <tr id="lin39">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">cantat</td>
+                    <td class="eng">sings</td>
+                </tr>
+                <tr id="lin40">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">cēna</td>
+                    <td class="eng">dinner</td>
+                </tr>
+                <tr id="lin41">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">cēnat</td>
+                    <td class="eng">dines, has dinner</td>
+                </tr>
+                <tr id="lin42">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">cōnsūmit</td>
+                    <td class="eng">eats</td>
+                </tr>
+                <tr id="lin43">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">coquit</td>
+                    <td class="eng">cooks</td>
+                </tr>
+                <tr id="lin44">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">dēlectat</td>
+                    <td class="eng">delights, pleases</td>
+                </tr>
+                <tr id="lin45">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">dominus</td>
+                    <td class="eng">master</td>
+                </tr>
+                <tr id="lin46">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">et</td>
+                    <td class="eng">and</td>
+                </tr>
+                <tr id="lin47">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">exspectat</td>
+                    <td class="eng">waits for</td>
+                </tr>
+                <tr id="lin48">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">gustat</td>
+                    <td class="eng">tastes</td>
+                </tr>
+                <tr id="lin49">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">laetissimus</td>
+                    <td class="eng">very happy</td>
+                </tr>
+                <tr id="lin50">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">laetus</td>
+                    <td class="eng">happy</td>
+                </tr>
+                <tr id="lin51">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">laudat</td>
+                    <td class="eng">praises</td>
+                </tr>
+                <tr id="lin52">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">lectus</td>
+                    <td class="eng">couch</td>
+                </tr>
+                <tr id="lin53">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">magnificē</td>
+                    <td class="eng">magnificently</td>
+                </tr>
+                <tr id="lin54">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">mercātor</td>
+                    <td class="eng">merchant</td>
+                </tr>
+                <tr id="lin55">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">mox</td>
+                    <td class="eng">soon</td>
+                </tr>
+                <tr id="lin56">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">nōn</td>
+                    <td class="eng">not</td>
+                </tr>
+                <tr id="lin57">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">numerat</td>
+                    <td class="eng">counts</td>
+                </tr>
+                <tr id="lin58">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">optimus</td>
+                    <td class="eng">very good, excellent, best</td>
+                </tr>
+                <tr id="lin59">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">parātus</td>
+                    <td class="eng">ready</td>
+                </tr>
+                <tr id="lin60">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">pāvō</td>
+                    <td class="eng">peacock</td>
+                </tr>
+                <tr id="lin61">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">pecūnia</td>
+                    <td class="eng">money</td>
+                </tr>
+                <tr id="lin62">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">portat</td>
+                    <td class="eng">carries</td>
+                </tr>
+                <tr id="lin63">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">quoque</td>
+                    <td class="eng">also, too</td>
+                </tr>
+                <tr id="lin64">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">recumbit</td>
+                    <td class="eng">lies down, reclines</td>
+                </tr>
+                <tr id="lin65">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">respondet</td>
+                    <td class="eng">replies</td>
+                </tr>
+                <tr id="lin66">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">salūtat</td>
+                    <td class="eng">greets</td>
+                </tr>
+                <tr id="lin67">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">salvē</td>
+                    <td class="eng">hello!</td>
+                </tr>
+                <tr id="lin68">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">spectat</td>
+                    <td class="eng">looks at, watches</td>
+                </tr>
+                <tr id="lin69">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">suāviter</td>
+                    <td class="eng">sweetly</td>
+                </tr>
+                <tr id="lin70">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">videt</td>
+                    <td class="eng">sees</td>
+                </tr>
+                <tr id="lin71">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">vīlla</td>
+                    <td class="eng">house, villa</td>
+                </tr>
+                <tr id="lin72">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">vīnum</td>
+                    <td class="eng">wine</td>
+                </tr>
+                <tr id="lin73">
+                    <td class="stg">&nbsp;&nbsp;2</td>
+                    <td class="hdw">vīsitat</td>
+                    <td class="eng">visits</td>
+                </tr>
+                <tr id="lin74">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">vituperat</td>
+                    <td class="eng">blames, curses</td>
+                </tr>
+                <tr id="lin75">
+                    <td class="stg">&nbsp;&nbsp;2*</td>
+                    <td class="hdw">vocat</td>
+                    <td class="eng">calls</td>
+                </tr>
+                <tr id="lin76">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">ad</td>
+                    <td class="eng">to, at</td>
+                </tr>
+                <tr id="lin77">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">ambulat</td>
+                    <td class="eng">walks</td>
+                </tr>
+                <tr id="lin78">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">aperit</td>
+                    <td class="eng">opens</td>
+                </tr>
+                <tr id="lin79">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">barba</td>
+                    <td class="eng">beard</td>
+                </tr>
+                <tr id="lin80">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">contentus</td>
+                    <td class="eng">satisfied</td>
+                </tr>
+                <tr id="lin81">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">discit</td>
+                    <td class="eng">learns</td>
+                </tr>
+                <tr id="lin82">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">doctus</td>
+                    <td class="eng">educated, skilful</td>
+                </tr>
+                <tr id="lin83">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">dūcit</td>
+                    <td class="eng">leads, takes</td>
+                </tr>
+                <tr id="lin84">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">ē</td>
+                    <td class="eng">from, out of</td>
+                </tr>
+                <tr id="lin85">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">ecce</td>
+                    <td class="eng">look!</td>
+                </tr>
+                <tr id="lin86">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">ēheu</td>
+                    <td class="eng">oh dear! oh no!</td>
+                </tr>
+                <tr id="lin87">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">emit</td>
+                    <td class="eng">buys</td>
+                </tr>
+                <tr id="lin88">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">ferōciter</td>
+                    <td class="eng">fiercely</td>
+                </tr>
+                <tr id="lin89">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">fluit</td>
+                    <td class="eng">flows</td>
+                </tr>
+                <tr id="lin90">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">fortis</td>
+                    <td class="eng">brave</td>
+                </tr>
+                <tr id="lin91">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">forum</td>
+                    <td class="eng">forum, market-place</td>
+                </tr>
+                <tr id="lin92">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">fūstis</td>
+                    <td class="eng">club</td>
+                </tr>
+                <tr id="lin93">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">habet</td>
+                    <td class="eng">has</td>
+                </tr>
+                <tr id="lin94">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">iānua</td>
+                    <td class="eng">door</td>
+                </tr>
+                <tr id="lin95">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">inquit</td>
+                    <td class="eng">says, said</td>
+                </tr>
+                <tr id="lin96">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">intentē</td>
+                    <td class="eng">intently, carefully</td>
+                </tr>
+                <tr id="lin97">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">leō</td>
+                    <td class="eng">lion</td>
+                </tr>
+                <tr id="lin98">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">lingua</td>
+                    <td class="eng">tongue, language</td>
+                </tr>
+                <tr id="lin99">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">magnus</td>
+                    <td class="eng">big, large, great</td>
+                </tr>
+                <tr id="lin100">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">multus</td>
+                    <td class="eng">much, many</td>
+                </tr>
+                <tr id="lin101">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">nāvis</td>
+                    <td class="eng">ship</td>
+                </tr>
+                <tr id="lin102">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">negōtium</td>
+                    <td class="eng">business</td>
+                </tr>
+                <tr id="lin103">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">novācula</td>
+                    <td class="eng">razor</td>
+                </tr>
+                <tr id="lin104">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">occupātus</td>
+                    <td class="eng">busy</td>
+                </tr>
+                <tr id="lin105">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">perterritus</td>
+                    <td class="eng">terrified</td>
+                </tr>
+                <tr id="lin106">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">petit</td>
+                    <td class="eng">makes for, attacks, seeks</td>
+                </tr>
+                <tr id="lin107">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">pictor</td>
+                    <td class="eng">painter, artist</td>
+                </tr>
+                <tr id="lin108">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">pictūra</td>
+                    <td class="eng">painting, picture</td>
+                </tr>
+                <tr id="lin109">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">pingit</td>
+                    <td class="eng">paints</td>
+                </tr>
+                <tr id="lin110">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">poēta</td>
+                    <td class="eng">poet</td>
+                </tr>
+                <tr id="lin111">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">portus</td>
+                    <td class="eng">harbour</td>
+                </tr>
+                <tr id="lin112">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">prope</td>
+                    <td class="eng">near</td>
+                </tr>
+                <tr id="lin113">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">pulcher</td>
+                    <td class="eng">beautiful</td>
+                </tr>
+                <tr id="lin114">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">pulsat</td>
+                    <td class="eng">hits, knocks at, punches</td>
+                </tr>
+                <tr id="lin115">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">quaerit</td>
+                    <td class="eng">searches for, looks for</td>
+                </tr>
+                <tr id="lin116">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">recitat</td>
+                    <td class="eng">recites</td>
+                </tr>
+                <tr id="lin117">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">revenit</td>
+                    <td class="eng">comes back, returns</td>
+                </tr>
+                <tr id="lin118">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">rīdet</td>
+                    <td class="eng">laughs, smiles</td>
+                </tr>
+                <tr id="lin119">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">sanguis</td>
+                    <td class="eng">blood</td>
+                </tr>
+                <tr id="lin120">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">satis</td>
+                    <td class="eng">enough</td>
+                </tr>
+                <tr id="lin121">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">scurrīlis</td>
+                    <td class="eng">rude</td>
+                </tr>
+                <tr id="lin122">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">secat</td>
+                    <td class="eng">cuts</td>
+                </tr>
+                <tr id="lin123">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">sed</td>
+                    <td class="eng">but</td>
+                </tr>
+                <tr id="lin124">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">sella</td>
+                    <td class="eng">chair</td>
+                </tr>
+                <tr id="lin125">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">senex</td>
+                    <td class="eng">old man</td>
+                </tr>
+                <tr id="lin126">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">taberna</td>
+                    <td class="eng">shop, inn</td>
+                </tr>
+                <tr id="lin127">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">tenet</td>
+                    <td class="eng">holds</td>
+                </tr>
+                <tr id="lin128">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">tondet</td>
+                    <td class="eng">shaves, trims</td>
+                </tr>
+                <tr id="lin129">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">tōnsor</td>
+                    <td class="eng">barber</td>
+                </tr>
+                <tr id="lin130">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">vēnālīcius</td>
+                    <td class="eng">slave-dealer</td>
+                </tr>
+                <tr id="lin131">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">venit</td>
+                    <td class="eng">comes</td>
+                </tr>
+                <tr id="lin132">
+                    <td class="stg">&nbsp;&nbsp;3*</td>
+                    <td class="hdw">verberat</td>
+                    <td class="eng">strikes, beats</td>
+                </tr>
+                <tr id="lin133">
+                    <td class="stg">&nbsp;&nbsp;3</td>
+                    <td class="hdw">versus</td>
+                    <td class="eng">verse, line of poetry</td>
+                </tr>
+                <tr id="lin134">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">accūsat</td>
+                    <td class="eng">accuses</td>
+                </tr>
+                <tr id="lin135">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">adest</td>
+                    <td class="eng">is here</td>
+                </tr>
+                <tr id="lin136">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">agit</td>
+                    <td class="eng">does, acts</td>
+                </tr>
+                <tr id="lin137">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">ānulus</td>
+                    <td class="eng">ring</td>
+                </tr>
+                <tr id="lin138">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">argentāria</td>
+                    <td class="eng">banker's stall</td>
+                </tr>
+                <tr id="lin139">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">basilica</td>
+                    <td class="eng">law court</td>
+                </tr>
+                <tr id="lin140">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">capit</td>
+                    <td class="eng">takes</td>
+                </tr>
+                <tr id="lin141">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">cēlat</td>
+                    <td class="eng">hides</td>
+                </tr>
+                <tr id="lin142">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">cēra</td>
+                    <td class="eng">wax, wax tablet</td>
+                </tr>
+                <tr id="lin143">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">convincit</td>
+                    <td class="eng">convicts, finds guilty</td>
+                </tr>
+                <tr id="lin144">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">cotīdiē</td>
+                    <td class="eng">every day</td>
+                </tr>
+                <tr id="lin145">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">cūr</td>
+                    <td class="eng">why?</td>
+                </tr>
+                <tr id="lin146">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">currit</td>
+                    <td class="eng">runs</td>
+                </tr>
+                <tr id="lin147">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">dēbet</td>
+                    <td class="eng">owes</td>
+                </tr>
+                <tr id="lin148">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">discēdit</td>
+                    <td class="eng">departs, leaves</td>
+                </tr>
+                <tr id="lin149">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">ēbrius</td>
+                    <td class="eng">drunk</td>
+                </tr>
+                <tr id="lin150">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">ego</td>
+                    <td class="eng">I</td>
+                </tr>
+                <tr id="lin151">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">hodiē</td>
+                    <td class="eng">today</td>
+                </tr>
+                <tr id="lin152">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">imprimit</td>
+                    <td class="eng">presses</td>
+                </tr>
+                <tr id="lin153">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">ita</td>
+                    <td class="eng">in this way</td>
+                </tr>
+                <tr id="lin154">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">ita vērō</td>
+                    <td class="eng">yes</td>
+                </tr>
+                <tr id="lin155">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">iūdex</td>
+                    <td class="eng">judge</td>
+                </tr>
+                <tr id="lin156">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">mē</td>
+                    <td class="eng">me</td>
+                </tr>
+                <tr id="lin157">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">mendāx</td>
+                    <td class="eng">liar</td>
+                </tr>
+                <tr id="lin158">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">meus</td>
+                    <td class="eng">my, mine</td>
+                </tr>
+                <tr id="lin159">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">probat</td>
+                    <td class="eng">proves</td>
+                </tr>
+                <tr id="lin160">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">probus</td>
+                    <td class="eng">honest</td>
+                </tr>
+                <tr id="lin161">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">quid</td>
+                    <td class="eng">what?</td>
+                </tr>
+                <tr id="lin162">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">quis</td>
+                    <td class="eng">who?</td>
+                </tr>
+                <tr id="lin163">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">reddit</td>
+                    <td class="eng">gives back</td>
+                </tr>
+                <tr id="lin164">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">rēs</td>
+                    <td class="eng">thing</td>
+                </tr>
+                <tr id="lin165">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">semper</td>
+                    <td class="eng">always</td>
+                </tr>
+                <tr id="lin166">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">signum</td>
+                    <td class="eng">sign, seal, signal</td>
+                </tr>
+                <tr id="lin167">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">tamen</td>
+                    <td class="eng">however</td>
+                </tr>
+                <tr id="lin168">
+                    <td class="stg">&nbsp;&nbsp;4</td>
+                    <td class="hdw">testis</td>
+                    <td class="eng">witness</td>
+                </tr>
+                <tr id="lin169">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">trādit</td>
+                    <td class="eng">hands over</td>
+                </tr>
+                <tr id="lin170">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">tū</td>
+                    <td class="eng">you 
+                        <i>(singular)</i>
+                    </td>
+                </tr>
+                <tr id="lin171">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">tuus</td>
+                    <td class="eng">your, yours</td>
+                </tr>
+                <tr id="lin172">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">ubi</td>
+                    <td class="eng">where</td>
+                </tr>
+                <tr id="lin173">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">urbs</td>
+                    <td class="eng">city</td>
+                </tr>
+                <tr id="lin174">
+                    <td class="stg">&nbsp;&nbsp;4*</td>
+                    <td class="hdw">vēndit</td>
+                    <td class="eng">sells</td>
+                </tr>
+                <tr id="lin175">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">abest</td>
+                    <td class="eng">is out, is absent</td>
+                </tr>
+                <tr id="lin176">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">āctor</td>
+                    <td class="eng">actor</td>
+                </tr>
+                <tr id="lin177">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">agricola</td>
+                    <td class="eng">farmer</td>
+                </tr>
+                <tr id="lin178">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">clāmor</td>
+                    <td class="eng">shout, uproar</td>
+                </tr>
+                <tr id="lin179">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">columba</td>
+                    <td class="eng">dove</td>
+                </tr>
+                <tr id="lin180">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">contendit</td>
+                    <td class="eng">hurries</td>
+                </tr>
+                <tr id="lin181">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">dat</td>
+                    <td class="eng">gives</td>
+                </tr>
+                <tr id="lin182">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">dē</td>
+                    <td class="eng">down from; about</td>
+                </tr>
+                <tr id="lin183">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">dēliciae</td>
+                    <td class="eng">darling</td>
+                </tr>
+                <tr id="lin184">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">dīcit</td>
+                    <td class="eng">says</td>
+                </tr>
+                <tr id="lin185">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">euge</td>
+                    <td class="eng">hurray!</td>
+                </tr>
+                <tr id="lin186">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">fābula</td>
+                    <td class="eng">play, story</td>
+                </tr>
+                <tr id="lin187">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">facit</td>
+                    <td class="eng">makes, does</td>
+                </tr>
+                <tr id="lin188">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">fēmina</td>
+                    <td class="eng">woman</td>
+                </tr>
+                <tr id="lin189">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">fūnambulus</td>
+                    <td class="eng">tight-rope walker</td>
+                </tr>
+                <tr id="lin190">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">iuvenis</td>
+                    <td class="eng">young man</td>
+                </tr>
+                <tr id="lin191">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">manet</td>
+                    <td class="eng">remains, stays</td>
+                </tr>
+                <tr id="lin192">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">mōns</td>
+                    <td class="eng">mountain</td>
+                </tr>
+                <tr id="lin193">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">nauta</td>
+                    <td class="eng">sailor</td>
+                </tr>
+                <tr id="lin194">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">nēmō</td>
+                    <td class="eng">no one, nobody</td>
+                </tr>
+                <tr id="lin195">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">nūntius</td>
+                    <td class="eng">messenger</td>
+                </tr>
+                <tr id="lin196">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">omnis</td>
+                    <td class="eng">all</td>
+                </tr>
+                <tr id="lin197">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">ōtiōsus</td>
+                    <td class="eng">idle, on holiday, on vacation</td>
+                </tr>
+                <tr id="lin198">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">pāstor</td>
+                    <td class="eng">shepherd</td>
+                </tr>
+                <tr id="lin199">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">per</td>
+                    <td class="eng">through</td>
+                </tr>
+                <tr id="lin200">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">plaudit</td>
+                    <td class="eng">applauds, claps</td>
+                </tr>
+                <tr id="lin201">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">porta</td>
+                    <td class="eng">gate</td>
+                </tr>
+                <tr id="lin202">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">puella</td>
+                    <td class="eng">girl</td>
+                </tr>
+                <tr id="lin203">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">puer</td>
+                    <td class="eng">boy</td>
+                </tr>
+                <tr id="lin204">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">quiētus</td>
+                    <td class="eng">quiet</td>
+                </tr>
+                <tr id="lin205">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">ruit</td>
+                    <td class="eng">rushes</td>
+                </tr>
+                <tr id="lin206">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">scaena</td>
+                    <td class="eng">stage, scene</td>
+                </tr>
+                <tr id="lin207">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">sēmisomnus</td>
+                    <td class="eng">half-asleep</td>
+                </tr>
+                <tr id="lin208">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">spectātor</td>
+                    <td class="eng">spectator</td>
+                </tr>
+                <tr id="lin209">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">subitō</td>
+                    <td class="eng">suddenly</td>
+                </tr>
+                <tr id="lin210">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">tandem</td>
+                    <td class="eng">at last</td>
+                </tr>
+                <tr id="lin211">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">theātrum</td>
+                    <td class="eng">theatre</td>
+                </tr>
+                <tr id="lin212">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">turba</td>
+                    <td class="eng">crowd</td>
+                </tr>
+                <tr id="lin213">
+                    <td class="stg">&nbsp;&nbsp;5*</td>
+                    <td class="hdw">uxor</td>
+                    <td class="eng">wife</td>
+                </tr>
+                <tr id="lin214">
+                    <td class="stg">&nbsp;&nbsp;5</td>
+                    <td class="hdw">vexat</td>
+                    <td class="eng">annoys</td>
+                </tr>
+                <tr id="lin215">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">administrat</td>
+                    <td class="eng">looks after</td>
+                </tr>
+                <tr id="lin216">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">agitat</td>
+                    <td class="eng">chases, hunts</td>
+                </tr>
+                <tr id="lin217">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">avārus</td>
+                    <td class="eng">miser</td>
+                </tr>
+                <tr id="lin218">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">celeriter</td>
+                    <td class="eng">quickly</td>
+                </tr>
+                <tr id="lin219">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">commōtus</td>
+                    <td class="eng">moved, affected</td>
+                </tr>
+                <tr id="lin220">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">contentiō</td>
+                    <td class="eng">argument</td>
+                </tr>
+                <tr id="lin221">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">cubiculum</td>
+                    <td class="eng">bedroom</td>
+                </tr>
+                <tr id="lin222">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">cum</td>
+                    <td class="eng">with</td>
+                </tr>
+                <tr id="lin223">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">custōdit</td>
+                    <td class="eng">guards</td>
+                </tr>
+                <tr id="lin224">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">duo</td>
+                    <td class="eng">two</td>
+                </tr>
+                <tr id="lin225">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">erat</td>
+                    <td class="eng">was</td>
+                </tr>
+                <tr id="lin226">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">excitāvit</td>
+                    <td class="eng">aroused, woke up</td>
+                </tr>
+                <tr id="lin227">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">facile</td>
+                    <td class="eng">easily</td>
+                </tr>
+                <tr id="lin228">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">festīnat</td>
+                    <td class="eng">hurries</td>
+                </tr>
+                <tr id="lin229">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">fidēlis</td>
+                    <td class="eng">faithful, loyal</td>
+                </tr>
+                <tr id="lin230">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">fūr</td>
+                    <td class="eng">thief</td>
+                </tr>
+                <tr id="lin231">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">habitat</td>
+                    <td class="eng">lives</td>
+                </tr>
+                <tr id="lin232">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">iacet</td>
+                    <td class="eng">lies</td>
+                </tr>
+                <tr id="lin233">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">igitur</td>
+                    <td class="eng">therefore, and so</td>
+                </tr>
+                <tr id="lin234">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">incitat</td>
+                    <td class="eng">urges on, encourages</td>
+                </tr>
+                <tr id="lin235">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">īnfāns</td>
+                    <td class="eng">child, baby</td>
+                </tr>
+                <tr id="lin236">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">ingēns</td>
+                    <td class="eng">huge</td>
+                </tr>
+                <tr id="lin237">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">invītat</td>
+                    <td class="eng">invites</td>
+                </tr>
+                <tr id="lin238">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">lacrimat</td>
+                    <td class="eng">weeps, cries</td>
+                </tr>
+                <tr id="lin239">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">laetē</td>
+                    <td class="eng">happily</td>
+                </tr>
+                <tr id="lin240">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">līberāvit</td>
+                    <td class="eng">freed, set free</td>
+                </tr>
+                <tr id="lin241">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">lībertus</td>
+                    <td class="eng">freedman, ex-slave</td>
+                </tr>
+                <tr id="lin242">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">maximus</td>
+                    <td class="eng">very big, very great</td>
+                </tr>
+                <tr id="lin243">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">nārrat</td>
+                    <td class="eng">tells, relates</td>
+                </tr>
+                <tr id="lin244">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">necat</td>
+                    <td class="eng">kills</td>
+                </tr>
+                <tr id="lin245">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">nihil</td>
+                    <td class="eng">nothing</td>
+                </tr>
+                <tr id="lin246">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">nisi</td>
+                    <td class="eng">except</td>
+                </tr>
+                <tr id="lin247">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">numquam</td>
+                    <td class="eng">never</td>
+                </tr>
+                <tr id="lin248">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">nunc</td>
+                    <td class="eng">now</td>
+                </tr>
+                <tr id="lin249">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">ōlim</td>
+                    <td class="eng">once, some time ago</td>
+                </tr>
+                <tr id="lin250">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">paene</td>
+                    <td class="eng">nearly, almost</td>
+                </tr>
+                <tr id="lin251">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">pānis</td>
+                    <td class="eng">bread</td>
+                </tr>
+                <tr id="lin252">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">parat</td>
+                    <td class="eng">prepares</td>
+                </tr>
+                <tr id="lin253">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">parvus</td>
+                    <td class="eng">small, little</td>
+                </tr>
+                <tr id="lin254">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">pistor</td>
+                    <td class="eng">baker</td>
+                </tr>
+                <tr id="lin255">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">post</td>
+                    <td class="eng">after</td>
+                </tr>
+                <tr id="lin256">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">postquam</td>
+                    <td class="eng">after, when</td>
+                </tr>
+                <tr id="lin257">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">postulat</td>
+                    <td class="eng">demands</td>
+                </tr>
+                <tr id="lin258">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">pugna</td>
+                    <td class="eng">fight</td>
+                </tr>
+                <tr id="lin259">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">pugnat</td>
+                    <td class="eng">fights</td>
+                </tr>
+                <tr id="lin260">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">quod</td>
+                    <td class="eng">because</td>
+                </tr>
+                <tr id="lin261">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">rogat</td>
+                    <td class="eng">asks</td>
+                </tr>
+                <tr id="lin262">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">serpēns</td>
+                    <td class="eng">snake</td>
+                </tr>
+                <tr id="lin263">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">servat</td>
+                    <td class="eng">saves, looks after, preserves</td>
+                </tr>
+                <tr id="lin264">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">sōlus</td>
+                    <td class="eng">alone, lonely</td>
+                </tr>
+                <tr id="lin265">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">soror</td>
+                    <td class="eng">sister</td>
+                </tr>
+                <tr id="lin266">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">statim</td>
+                    <td class="eng">at once</td>
+                </tr>
+                <tr id="lin267">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">superat</td>
+                    <td class="eng">overcomes, overpowers</td>
+                </tr>
+                <tr id="lin268">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">tacitē</td>
+                    <td class="eng">quietly, silently</td>
+                </tr>
+                <tr id="lin269">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">timet</td>
+                    <td class="eng">is afraid, fears</td>
+                </tr>
+                <tr id="lin270">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">tōtus</td>
+                    <td class="eng">whole</td>
+                </tr>
+                <tr id="lin271">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">tum</td>
+                    <td class="eng">then</td>
+                </tr>
+                <tr id="lin272">
+                    <td class="stg">&nbsp;&nbsp;6</td>
+                    <td class="hdw">vāgīvit</td>
+                    <td class="eng">cried, wailed</td>
+                </tr>
+                <tr id="lin273">
+                    <td class="stg">&nbsp;&nbsp;6*</td>
+                    <td class="hdw">valdē</td>
+                    <td class="eng">very much, very</td>
+                </tr>
+                <tr id="lin274">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">alius</td>
+                    <td class="eng">other, another</td>
+                </tr>
+                <tr id="lin275">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">amphitheātrum</td>
+                    <td class="eng">amphitheatre</td>
+                </tr>
+                <tr id="lin276">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">appāret</td>
+                    <td class="eng">appears</td>
+                </tr>
+                <tr id="lin277">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">arēna</td>
+                    <td class="eng">arena</td>
+                </tr>
+                <tr id="lin278">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">caelum</td>
+                    <td class="eng">sky</td>
+                </tr>
+                <tr id="lin279">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">cautē</td>
+                    <td class="eng">cautiously</td>
+                </tr>
+                <tr id="lin280">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">centuriō</td>
+                    <td class="eng">centurion</td>
+                </tr>
+                <tr id="lin281">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">compōnit</td>
+                    <td class="eng">arranges</td>
+                </tr>
+                <tr id="lin282">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">cōnspicit</td>
+                    <td class="eng">catches sight of</td>
+                </tr>
+                <tr id="lin283">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">crīnēs</td>
+                    <td class="eng">hair</td>
+                </tr>
+                <tr id="lin284">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">cūrat</td>
+                    <td class="eng">looks after</td>
+                </tr>
+                <tr id="lin285">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">dēpōnit</td>
+                    <td class="eng">puts down, takes off</td>
+                </tr>
+                <tr id="lin286">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">dēsertus</td>
+                    <td class="eng">deserted</td>
+                </tr>
+                <tr id="lin287">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">dēspērat</td>
+                    <td class="eng">despairs</td>
+                </tr>
+                <tr id="lin288">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">dīligenter</td>
+                    <td class="eng">carefully</td>
+                </tr>
+                <tr id="lin289">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">dīxit</td>
+                    <td class="eng">said</td>
+                </tr>
+                <tr id="lin290">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">eum</td>
+                    <td class="eng">him, it</td>
+                </tr>
+                <tr id="lin291">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">ēvānuit</td>
+                    <td class="eng">vanished</td>
+                </tr>
+                <tr id="lin292">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">ex</td>
+                    <td class="eng">out of, from</td>
+                </tr>
+                <tr id="lin293">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">explicāvit</td>
+                    <td class="eng">explained</td>
+                </tr>
+                <tr id="lin294">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">fēcit</td>
+                    <td class="eng">made, did</td>
+                </tr>
+                <tr id="lin295">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">fēlēs</td>
+                    <td class="eng">cat</td>
+                </tr>
+                <tr id="lin296">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">fortasse</td>
+                    <td class="eng">perhaps</td>
+                </tr>
+                <tr id="lin297">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">gladiātor</td>
+                    <td class="eng">gladiator</td>
+                </tr>
+                <tr id="lin298">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">gladius</td>
+                    <td class="eng">sword</td>
+                </tr>
+                <tr id="lin299">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">hausit</td>
+                    <td class="eng">drained, drank up</td>
+                </tr>
+                <tr id="lin300">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">hercle</td>
+                    <td class="eng">by Hercules! good heavens!</td>
+                </tr>
+                <tr id="lin301">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">heri</td>
+                    <td class="eng">yesterday</td>
+                </tr>
+                <tr id="lin302">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">homō</td>
+                    <td class="eng">human being, man</td>
+                </tr>
+                <tr id="lin303">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">hospes</td>
+                    <td class="eng">guest</td>
+                </tr>
+                <tr id="lin304">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">ille</td>
+                    <td class="eng">that</td>
+                </tr>
+                <tr id="lin305">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">īnsānus</td>
+                    <td class="eng">mad, crazy</td>
+                </tr>
+                <tr id="lin306">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">īnspicit</td>
+                    <td class="eng">looks at, inspects, examines</td>
+                </tr>
+                <tr id="lin307">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">intellegit</td>
+                    <td class="eng">understands</td>
+                </tr>
+                <tr id="lin308">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">lapideus</td>
+                    <td class="eng">made of stone</td>
+                </tr>
+                <tr id="lin309">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">locus</td>
+                    <td class="eng">place</td>
+                </tr>
+                <tr id="lin310">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">longus</td>
+                    <td class="eng">long</td>
+                </tr>
+                <tr id="lin311">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">lūcet</td>
+                    <td class="eng">shines</td>
+                </tr>
+                <tr id="lin312">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">lūna</td>
+                    <td class="eng">moon</td>
+                </tr>
+                <tr id="lin313">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">lupus</td>
+                    <td class="eng">wolf</td>
+                </tr>
+                <tr id="lin314">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">mīrābilis</td>
+                    <td class="eng">extraordinary, strange</td>
+                </tr>
+                <tr id="lin315">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">mittit</td>
+                    <td class="eng">sends</td>
+                </tr>
+                <tr id="lin316">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">mortuus</td>
+                    <td class="eng">dead</td>
+                </tr>
+                <tr id="lin317">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">nōtissimus</td>
+                    <td class="eng">very well-known</td>
+                </tr>
+                <tr id="lin318">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">nox</td>
+                    <td class="eng">night</td>
+                </tr>
+                <tr id="lin319">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">nūllus</td>
+                    <td class="eng">no</td>
+                </tr>
+                <tr id="lin320">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">optimē</td>
+                    <td class="eng">very well</td>
+                </tr>
+                <tr id="lin321">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">pessimus</td>
+                    <td class="eng">worst, very bad</td>
+                </tr>
+                <tr id="lin322">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">plēnus</td>
+                    <td class="eng">full</td>
+                </tr>
+                <tr id="lin323">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">pōculum</td>
+                    <td class="eng">wine-cup</td>
+                </tr>
+                <tr id="lin324">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">prīmus</td>
+                    <td class="eng">first</td>
+                </tr>
+                <tr id="lin325">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">prōcēdit</td>
+                    <td class="eng">advances, proceeds</td>
+                </tr>
+                <tr id="lin326">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">proprius</td>
+                    <td class="eng">right, proper</td>
+                </tr>
+                <tr id="lin327">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">secundus</td>
+                    <td class="eng">second</td>
+                </tr>
+                <tr id="lin328">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">silva</td>
+                    <td class="eng">wood</td>
+                </tr>
+                <tr id="lin329">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">sollicitus</td>
+                    <td class="eng">worried, anxious</td>
+                </tr>
+                <tr id="lin330">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">stēlla</td>
+                    <td class="eng">star</td>
+                </tr>
+                <tr id="lin331">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">stilus</td>
+                    <td class="eng">pen, stick</td>
+                </tr>
+                <tr id="lin332">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">stola</td>
+                    <td class="eng">dress</td>
+                </tr>
+                <tr id="lin333">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">tacet</td>
+                    <td class="eng">is silent, is quiet</td>
+                </tr>
+                <tr id="lin334">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">tē</td>
+                    <td class="eng">you 
+                        <i>(singular)</i>
+                    </td>
+                </tr>
+                <tr id="lin335">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">terret</td>
+                    <td class="eng">frightens</td>
+                </tr>
+                <tr id="lin336">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">timidē</td>
+                    <td class="eng">nervously</td>
+                </tr>
+                <tr id="lin337">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">trahit</td>
+                    <td class="eng">drags</td>
+                </tr>
+                <tr id="lin338">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">tunica</td>
+                    <td class="eng">tunic</td>
+                </tr>
+                <tr id="lin339">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">ululāvit</td>
+                    <td class="eng">howled</td>
+                </tr>
+                <tr id="lin340">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">umbra</td>
+                    <td class="eng">shadow, ghost</td>
+                </tr>
+                <tr id="lin341">
+                    <td class="stg">&nbsp;&nbsp;7*</td>
+                    <td class="hdw">valē</td>
+                    <td class="eng">goodbye</td>
+                </tr>
+                <tr id="lin342">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">versipellis</td>
+                    <td class="eng">werewolf</td>
+                </tr>
+                <tr id="lin343">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">vibrat</td>
+                    <td class="eng">waves, brandishes</td>
+                </tr>
+                <tr id="lin344">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">vīta</td>
+                    <td class="eng">life</td>
+                </tr>
+                <tr id="lin345">
+                    <td class="stg">&nbsp;&nbsp;7</td>
+                    <td class="hdw">vīvit</td>
+                    <td class="eng">is alive</td>
+                </tr>
+                <tr id="lin346">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">adiuvat</td>
+                    <td class="eng">helps</td>
+                </tr>
+                <tr id="lin347">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">agnōscit</td>
+                    <td class="eng">recognises</td>
+                </tr>
+                <tr id="lin348">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">alter</td>
+                    <td class="eng">the other, the second</td>
+                </tr>
+                <tr id="lin349">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">attonitus</td>
+                    <td class="eng">astonished</td>
+                </tr>
+                <tr id="lin350">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">audācissimē</td>
+                    <td class="eng">very boldly</td>
+                </tr>
+                <tr id="lin351">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">benignus</td>
+                    <td class="eng">kind</td>
+                </tr>
+                <tr id="lin352">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">bēstia</td>
+                    <td class="eng">wild beast</td>
+                </tr>
+                <tr id="lin353">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">bēstiārius</td>
+                    <td class="eng">a gladiator who fights animals</td>
+                </tr>
+                <tr id="lin354">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">callidus</td>
+                    <td class="eng">clever, cunning</td>
+                </tr>
+                <tr id="lin355">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">celebrat</td>
+                    <td class="eng">celebrates</td>
+                </tr>
+                <tr id="lin356">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">cervus</td>
+                    <td class="eng">deer</td>
+                </tr>
+                <tr id="lin357">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">cīvis</td>
+                    <td class="eng">citizen</td>
+                </tr>
+                <tr id="lin358">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">clausus</td>
+                    <td class="eng">closed</td>
+                </tr>
+                <tr id="lin359">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">commīsit</td>
+                    <td class="eng">began</td>
+                </tr>
+                <tr id="lin360">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">complet</td>
+                    <td class="eng">fills</td>
+                </tr>
+                <tr id="lin361">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">comprehendit</td>
+                    <td class="eng">arrested</td>
+                </tr>
+                <tr id="lin362">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">dēcipit</td>
+                    <td class="eng">deceives, fools</td>
+                </tr>
+                <tr id="lin363">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">dedit</td>
+                    <td class="eng">gave, has given</td>
+                </tr>
+                <tr id="lin364">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">dēstrīnxit</td>
+                    <td class="eng">drew out</td>
+                </tr>
+                <tr id="lin365">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">diēs</td>
+                    <td class="eng">day</td>
+                </tr>
+                <tr id="lin366">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">dolet</td>
+                    <td class="eng">hurts, is in pain</td>
+                </tr>
+                <tr id="lin367">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">ēdit</td>
+                    <td class="eng">presents</td>
+                </tr>
+                <tr id="lin368">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">ēsurit</td>
+                    <td class="eng">is hungry</td>
+                </tr>
+                <tr id="lin369">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">ēvītāvit</td>
+                    <td class="eng">avoided</td>
+                </tr>
+                <tr id="lin370">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">exclāmat</td>
+                    <td class="eng">exclaims, shouts</td>
+                </tr>
+                <tr id="lin371">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">expedītus</td>
+                    <td class="eng">lightly armed</td>
+                </tr>
+                <tr id="lin372">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">extrāxit</td>
+                    <td class="eng">pulled out</td>
+                </tr>
+                <tr id="lin373">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">ferōcissimus</td>
+                    <td class="eng">very fierce</td>
+                </tr>
+                <tr id="lin374">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">ferōx</td>
+                    <td class="eng">fierce, ferocious</td>
+                </tr>
+                <tr id="lin375">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">fortissimus</td>
+                    <td class="eng">very brave</td>
+                </tr>
+                <tr id="lin376">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">fortiter</td>
+                    <td class="eng">bravely</td>
+                </tr>
+                <tr id="lin377">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">fremit</td>
+                    <td class="eng">roars</td>
+                </tr>
+                <tr id="lin378">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">frūstrā</td>
+                    <td class="eng">in vain</td>
+                </tr>
+                <tr id="lin379">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">fugit</td>
+                    <td class="eng">runs away, flees</td>
+                </tr>
+                <tr id="lin380">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">graviter</td>
+                    <td class="eng">seriously</td>
+                </tr>
+                <tr id="lin381">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">hic</td>
+                    <td class="eng">this</td>
+                </tr>
+                <tr id="lin382">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">hoc</td>
+                    <td class="eng">this</td>
+                </tr>
+                <tr id="lin383">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">hunc</td>
+                    <td class="eng">this</td>
+                </tr>
+                <tr id="lin384">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">ignāvus</td>
+                    <td class="eng">cowardly, lazy</td>
+                </tr>
+                <tr id="lin385">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">inimīcus</td>
+                    <td class="eng">enemy</td>
+                </tr>
+                <tr id="lin386">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">interfēcit</td>
+                    <td class="eng">killed</td>
+                </tr>
+                <tr id="lin387">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">īrātissimus</td>
+                    <td class="eng">very angry</td>
+                </tr>
+                <tr id="lin388">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">iterum</td>
+                    <td class="eng">again</td>
+                </tr>
+                <tr id="lin389">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">lambit</td>
+                    <td class="eng">licks</td>
+                </tr>
+                <tr id="lin390">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">longissimus</td>
+                    <td class="eng">very long</td>
+                </tr>
+                <tr id="lin391">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">magnificus</td>
+                    <td class="eng">magnificent</td>
+                </tr>
+                <tr id="lin392">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">missiō</td>
+                    <td class="eng">release</td>
+                </tr>
+                <tr id="lin393">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">mors</td>
+                    <td class="eng">death</td>
+                </tr>
+                <tr id="lin394">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">murmillō</td>
+                    <td class="eng">a kind of gladiator</td>
+                </tr>
+                <tr id="lin395">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">nōtus</td>
+                    <td class="eng">well-known, famous</td>
+                </tr>
+                <tr id="lin396">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">nūntiat</td>
+                    <td class="eng">announces</td>
+                </tr>
+                <tr id="lin397">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">obdormīvit</td>
+                    <td class="eng">went to sleep</td>
+                </tr>
+                <tr id="lin398">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">olfēcit</td>
+                    <td class="eng">smelled, sniffed</td>
+                </tr>
+                <tr id="lin399">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">ostendit</td>
+                    <td class="eng">shows</td>
+                </tr>
+                <tr id="lin400">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">pēs</td>
+                    <td class="eng">foot, paw</td>
+                </tr>
+                <tr id="lin401">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">pollex</td>
+                    <td class="eng">thumb</td>
+                </tr>
+                <tr id="lin402">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">posteā</td>
+                    <td class="eng">afterwards</td>
+                </tr>
+                <tr id="lin403">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">prōvocāvit</td>
+                    <td class="eng">called out, challenged</td>
+                </tr>
+                <tr id="lin404">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">quam</td>
+                    <td class="eng">than, how</td>
+                </tr>
+                <tr id="lin405">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">rētiārius</td>
+                    <td class="eng">net-fighter</td>
+                </tr>
+                <tr id="lin406">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">retinet</td>
+                    <td class="eng">holds back, keeps</td>
+                </tr>
+                <tr id="lin407">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">rīdiculus</td>
+                    <td class="eng">ridiculous, silly</td>
+                </tr>
+                <tr id="lin408">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">saepe</td>
+                    <td class="eng">often</td>
+                </tr>
+                <tr id="lin409">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">salūs</td>
+                    <td class="eng">safety</td>
+                </tr>
+                <tr id="lin410">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">senātor</td>
+                    <td class="eng">senator</td>
+                </tr>
+                <tr id="lin411">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">sonuit</td>
+                    <td class="eng">sounded</td>
+                </tr>
+                <tr id="lin412">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">spectāculum</td>
+                    <td class="eng">show, spectacle</td>
+                </tr>
+                <tr id="lin413">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">spīna</td>
+                    <td class="eng">thorn</td>
+                </tr>
+                <tr id="lin414">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">splendidus</td>
+                    <td class="eng">splendid</td>
+                </tr>
+                <tr id="lin415">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">suus</td>
+                    <td class="eng">his, her, their</td>
+                </tr>
+                <tr id="lin416">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">trēs</td>
+                    <td class="eng">three</td>
+                </tr>
+                <tr id="lin417">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">trīstis</td>
+                    <td class="eng">sad</td>
+                </tr>
+                <tr id="lin418">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">trīstissimus</td>
+                    <td class="eng">very sad</td>
+                </tr>
+                <tr id="lin419">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">tuba</td>
+                    <td class="eng">trumpet</td>
+                </tr>
+                <tr id="lin420">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">turbulentus</td>
+                    <td class="eng">rowdy, disorderly</td>
+                </tr>
+                <tr id="lin421">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">ūnus</td>
+                    <td class="eng">one</td>
+                </tr>
+                <tr id="lin422">
+                    <td class="stg">&nbsp;&nbsp;8*</td>
+                    <td class="hdw">vehementer</td>
+                    <td class="eng">violently, loudly</td>
+                </tr>
+                <tr id="lin423">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">vēnātiō</td>
+                    <td class="eng">hunt</td>
+                </tr>
+                <tr id="lin424">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">vertit</td>
+                    <td class="eng">turned</td>
+                </tr>
+                <tr id="lin425">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">victor</td>
+                    <td class="eng">victor, winner</td>
+                </tr>
+                <tr id="lin426">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">vīgintī</td>
+                    <td class="eng">twenty</td>
+                </tr>
+                <tr id="lin427">
+                    <td class="stg">&nbsp;&nbsp;8</td>
+                    <td class="hdw">vulnerāvit</td>
+                    <td class="eng">wounded, injured</td>
+                </tr>
+                <tr id="lin428">
+                    <td class="stg">&nbsp;&nbsp;9*</td>
+                    <td class="hdw">abit</td>
+                    <td class="eng">goes away</td>
+                </tr>
+                <tr id="lin429">
+                    <td class="stg">&nbsp;&nbsp;9*</td>
+                    <td class="hdw">accipit</td>
+                    <td class="eng">accepts</td>
+                </tr>
+                <tr id="lin430">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">aeger</td>
+                    <td class="eng">sick, ill</td>
+                </tr>
+                <tr id="lin431">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">apodytērium</td>
+                    <td class="eng">changing-room</td>
+                </tr>
+                <tr id="lin432">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">āthlēta</td>
+                    <td class="eng">athlete</td>
+                </tr>
+                <tr id="lin433">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">aurae</td>
+                    <td class="eng">air</td>
+                </tr>
+                <tr id="lin434">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">cōnsentit</td>
+                    <td class="eng">agrees</td>
+                </tr>
+                <tr id="lin435">
+                    <td class="stg">&nbsp;&nbsp;9*</td>
+                    <td class="hdw">cupit</td>
+                    <td class="eng">wants</td>
+                </tr>
+                <tr id="lin436">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">decem</td>
+                    <td class="eng">ten</td>
+                </tr>
+                <tr id="lin437">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">dēnārius</td>
+                    <td class="eng">a denarius 
+                        <i>(coin)</i>
+                    </td>
+                </tr>
+                <tr id="lin438">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">discus</td>
+                    <td class="eng">discus</td>
+                </tr>
+                <tr id="lin439">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">domina</td>
+                    <td class="eng">mistress, madam</td>
+                </tr>
+                <tr id="lin440">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">dōnum</td>
+                    <td class="eng">present, gift</td>
+                </tr>
+                <tr id="lin441">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">ēlēgit</td>
+                    <td class="eng">chose</td>
+                </tr>
+                <tr id="lin442">
+                    <td class="stg">&nbsp;&nbsp;9*</td>
+                    <td class="hdw">ēmittit</td>
+                    <td class="eng">throws, sends out</td>
+                </tr>
+                <tr id="lin443">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">ēvolāvit</td>
+                    <td class="eng">flew</td>
+                </tr>
+                <tr id="lin444">
+                    <td class="stg">&nbsp;&nbsp;9*</td>
+                    <td class="hdw">fert</td>
+                    <td class="eng">brings, carries</td>
+                </tr>
+                <tr id="lin445">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">frāctus</td>
+                    <td class="eng">broken</td>
+                </tr>
+                <tr id="lin446">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">gerit</td>
+                    <td class="eng">wears</td>
+                </tr>
+                <tr id="lin447">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">grātiae</td>
+                    <td class="eng">thanks</td>
+                </tr>
+                <tr id="lin448">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">hae</td>
+                    <td class="eng">these</td>
+                </tr>
+                <tr id="lin449">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">haec</td>
+                    <td class="eng">this</td>
+                </tr>
+                <tr id="lin450">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">induit</td>
+                    <td class="eng">puts on</td>
+                </tr>
+                <tr id="lin451">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">intus</td>
+                    <td class="eng">inside</td>
+                </tr>
+                <tr id="lin452">
+                    <td class="stg">&nbsp;&nbsp;9*</td>
+                    <td class="hdw">invenit</td>
+                    <td class="eng">finds</td>
+                </tr>
+                <tr id="lin453">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">līberī</td>
+                    <td class="eng">children</td>
+                </tr>
+                <tr id="lin454">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">longē</td>
+                    <td class="eng">a long way, far</td>
+                </tr>
+                <tr id="lin455">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">māne</td>
+                    <td class="eng">in the morning</td>
+                </tr>
+                <tr id="lin456">
+                    <td class="stg">&nbsp;&nbsp;9*</td>
+                    <td class="hdw">medius</td>
+                    <td class="eng">middle</td>
+                </tr>
+                <tr id="lin457">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">mihi</td>
+                    <td class="eng">to me</td>
+                </tr>
+                <tr id="lin458">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">nāsus</td>
+                    <td class="eng">nose</td>
+                </tr>
+                <tr id="lin459">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">nimium</td>
+                    <td class="eng">too much</td>
+                </tr>
+                <tr id="lin460">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">novus</td>
+                    <td class="eng">new</td>
+                </tr>
+                <tr id="lin461">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">num</td>
+                    <td class="eng">surely...not?</td>
+                </tr>
+                <tr id="lin462">
+                    <td class="stg">&nbsp;&nbsp;9*</td>
+                    <td class="hdw">offert</td>
+                    <td class="eng">offers</td>
+                </tr>
+                <tr id="lin463">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">palaestra</td>
+                    <td class="eng">palaestra, exercise area</td>
+                </tr>
+                <tr id="lin464">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">parce</td>
+                    <td class="eng">spare me! have pity on me!</td>
+                </tr>
+                <tr id="lin465">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">pauper</td>
+                    <td class="eng">poor</td>
+                </tr>
+                <tr id="lin466">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">pauperrimus</td>
+                    <td class="eng">very poor</td>
+                </tr>
+                <tr id="lin467">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">percussit</td>
+                    <td class="eng">struck</td>
+                </tr>
+                <tr id="lin468">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">porticus</td>
+                    <td class="eng">colonnade</td>
+                </tr>
+                <tr id="lin469">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">posuit</td>
+                    <td class="eng">placed, put up</td>
+                </tr>
+                <tr id="lin470">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">pulcherrimus</td>
+                    <td class="eng">very beautiful</td>
+                </tr>
+                <tr id="lin471">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">quadrāgintā</td>
+                    <td class="eng">forty</td>
+                </tr>
+                <tr id="lin472">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">quantī</td>
+                    <td class="eng">what price? how much?</td>
+                </tr>
+                <tr id="lin473">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">quīndecim</td>
+                    <td class="eng">fifteen</td>
+                </tr>
+                <tr id="lin474">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">quīnquāgintā</td>
+                    <td class="eng">fifty</td>
+                </tr>
+                <tr id="lin475">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">rediit</td>
+                    <td class="eng">went back, came back, returned</td>
+                </tr>
+                <tr id="lin476">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">sordidus</td>
+                    <td class="eng">dirty</td>
+                </tr>
+                <tr id="lin477">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">statua</td>
+                    <td class="eng">statue</td>
+                </tr>
+                <tr id="lin478">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">thermae</td>
+                    <td class="eng">baths</td>
+                </tr>
+                <tr id="lin479">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">tibi</td>
+                    <td class="eng">to you 
+                        <i>(singular)</i>
+                    </td>
+                </tr>
+                <tr id="lin480">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">toga</td>
+                    <td class="eng">toga</td>
+                </tr>
+                <tr id="lin481">
+                    <td class="stg">&nbsp;&nbsp;9</td>
+                    <td class="hdw">trīgintā</td>
+                    <td class="eng">thirty</td>
+                </tr>
+                <tr id="lin482">
+                    <td class="stg">10</td>
+                    <td class="hdw">aedificat</td>
+                    <td class="eng">builds</td>
+                </tr>
+                <tr id="lin483">
+                    <td class="stg">10*</td>
+                    <td class="hdw">āmittit</td>
+                    <td class="eng">loses</td>
+                </tr>
+                <tr id="lin484">
+                    <td class="stg">10</td>
+                    <td class="hdw">antīquus</td>
+                    <td class="eng">old, ancient</td>
+                </tr>
+                <tr id="lin485">
+                    <td class="stg">10</td>
+                    <td class="hdw">architectus</td>
+                    <td class="eng">builder, architect</td>
+                </tr>
+                <tr id="lin486">
+                    <td class="stg">10</td>
+                    <td class="hdw">ardet</td>
+                    <td class="eng">burns, is on fire</td>
+                </tr>
+                <tr id="lin487">
+                    <td class="stg">10</td>
+                    <td class="hdw">argūmentum</td>
+                    <td class="eng">proof, evidence</td>
+                </tr>
+                <tr id="lin488">
+                    <td class="stg">10</td>
+                    <td class="hdw">artifex</td>
+                    <td class="eng">artist, craftsman</td>
+                </tr>
+                <tr id="lin489">
+                    <td class="stg">10</td>
+                    <td class="hdw">auctor</td>
+                    <td class="eng">creator</td>
+                </tr>
+                <tr id="lin490">
+                    <td class="stg">10</td>
+                    <td class="hdw">barbarus</td>
+                    <td class="eng">barbarian</td>
+                </tr>
+                <tr id="lin491">
+                    <td class="stg">10</td>
+                    <td class="hdw">callidior</td>
+                    <td class="eng">more cunning, cleverer</td>
+                </tr>
+                <tr id="lin492">
+                    <td class="stg">10</td>
+                    <td class="hdw">caupō</td>
+                    <td class="eng">innkeeper</td>
+                </tr>
+                <tr id="lin493">
+                    <td class="stg">10</td>
+                    <td class="hdw">cēpit</td>
+                    <td class="eng">took</td>
+                </tr>
+                <tr id="lin494">
+                    <td class="stg">10</td>
+                    <td class="hdw">clausit</td>
+                    <td class="eng">shut, closed</td>
+                </tr>
+                <tr id="lin495">
+                    <td class="stg">10</td>
+                    <td class="hdw">contrōversia</td>
+                    <td class="eng">debate</td>
+                </tr>
+                <tr id="lin496">
+                    <td class="stg">10</td>
+                    <td class="hdw">cucurrit</td>
+                    <td class="eng">ran</td>
+                </tr>
+                <tr id="lin497">
+                    <td class="stg">10</td>
+                    <td class="hdw">dēiēcit</td>
+                    <td class="eng">threw down</td>
+                </tr>
+                <tr id="lin498">
+                    <td class="stg">10</td>
+                    <td class="hdw">deinde</td>
+                    <td class="eng">then</td>
+                </tr>
+                <tr id="lin499">
+                    <td class="stg">10</td>
+                    <td class="hdw">dēlēvit</td>
+                    <td class="eng">destroyed</td>
+                </tr>
+                <tr id="lin500">
+                    <td class="stg">10</td>
+                    <td class="hdw">deus</td>
+                    <td class="eng">god</td>
+                </tr>
+                <tr id="lin501">
+                    <td class="stg">10</td>
+                    <td class="hdw">dissentit</td>
+                    <td class="eng">disagrees, argues</td>
+                </tr>
+                <tr id="lin502">
+                    <td class="stg">10</td>
+                    <td class="hdw">docet</td>
+                    <td class="eng">teaches</td>
+                </tr>
+                <tr id="lin503">
+                    <td class="stg">10</td>
+                    <td class="hdw">eam</td>
+                    <td class="eng">her</td>
+                </tr>
+                <tr id="lin504">
+                    <td class="stg">10</td>
+                    <td class="hdw">eōs</td>
+                    <td class="eng">them</td>
+                </tr>
+                <tr id="lin505">
+                    <td class="stg">10</td>
+                    <td class="hdw">fēlīx</td>
+                    <td class="eng">lucky</td>
+                </tr>
+                <tr id="lin506">
+                    <td class="stg">10</td>
+                    <td class="hdw">fortior</td>
+                    <td class="eng">braver</td>
+                </tr>
+                <tr id="lin507">
+                    <td class="stg">10*</td>
+                    <td class="hdw">frāter</td>
+                    <td class="eng">brother</td>
+                </tr>
+                <tr id="lin508">
+                    <td class="stg">10*</td>
+                    <td class="hdw">fundus</td>
+                    <td class="eng">farm</td>
+                </tr>
+                <tr id="lin509">
+                    <td class="stg">10</td>
+                    <td class="hdw">hanc</td>
+                    <td class="eng">this</td>
+                </tr>
+                <tr id="lin510">
+                    <td class="stg">10</td>
+                    <td class="hdw">hūc</td>
+                    <td class="eng">here, to here</td>
+                </tr>
+                <tr id="lin511">
+                    <td class="stg">10</td>
+                    <td class="hdw">ībat</td>
+                    <td class="eng">was going</td>
+                </tr>
+                <tr id="lin512">
+                    <td class="stg">10</td>
+                    <td class="hdw">imitātor</td>
+                    <td class="eng">imitator</td>
+                </tr>
+                <tr id="lin513">
+                    <td class="stg">10*</td>
+                    <td class="hdw">imperium</td>
+                    <td class="eng">empire</td>
+                </tr>
+                <tr id="lin514">
+                    <td class="stg">10</td>
+                    <td class="hdw">incendium</td>
+                    <td class="eng">fire, blaze</td>
+                </tr>
+                <tr id="lin515">
+                    <td class="stg">10</td>
+                    <td class="hdw">īnfēlīx</td>
+                    <td class="eng">unlucky</td>
+                </tr>
+                <tr id="lin516">
+                    <td class="stg">10</td>
+                    <td class="hdw">īnstitor</td>
+                    <td class="eng">pedlar, street vendor</td>
+                </tr>
+                <tr id="lin517">
+                    <td class="stg">10</td>
+                    <td class="hdw">īrātior</td>
+                    <td class="eng">angrier</td>
+                </tr>
+                <tr id="lin518">
+                    <td class="stg">10*</td>
+                    <td class="hdw">legit</td>
+                    <td class="eng">reads</td>
+                </tr>
+                <tr id="lin519">
+                    <td class="stg">10*</td>
+                    <td class="hdw">liber</td>
+                    <td class="eng">book</td>
+                </tr>
+                <tr id="lin520">
+                    <td class="stg">10</td>
+                    <td class="hdw">maior</td>
+                    <td class="eng">bigger, larger, greater</td>
+                </tr>
+                <tr id="lin521">
+                    <td class="stg">10</td>
+                    <td class="hdw">marītus</td>
+                    <td class="eng">husband</td>
+                </tr>
+                <tr id="lin522">
+                    <td class="stg">10</td>
+                    <td class="hdw">melior</td>
+                    <td class="eng">better</td>
+                </tr>
+                <tr id="lin523">
+                    <td class="stg">10*</td>
+                    <td class="hdw">minimē</td>
+                    <td class="eng">no!</td>
+                </tr>
+                <tr id="lin524">
+                    <td class="stg">10</td>
+                    <td class="hdw">miserandus</td>
+                    <td class="eng">pitiful, pathetic</td>
+                </tr>
+                <tr id="lin525">
+                    <td class="stg">10</td>
+                    <td class="hdw">nōbīs</td>
+                    <td class="eng">to us</td>
+                </tr>
+                <tr id="lin526">
+                    <td class="stg">10*</td>
+                    <td class="hdw">nōs</td>
+                    <td class="eng">we, us</td>
+                </tr>
+                <tr id="lin527">
+                    <td class="stg">10*</td>
+                    <td class="hdw">pāx</td>
+                    <td class="eng">peace</td>
+                </tr>
+                <tr id="lin528">
+                    <td class="stg">10</td>
+                    <td class="hdw">philosophus</td>
+                    <td class="eng">philosopher</td>
+                </tr>
+                <tr id="lin529">
+                    <td class="stg">10</td>
+                    <td class="hdw">piscīna</td>
+                    <td class="eng">fish-pond</td>
+                </tr>
+                <tr id="lin530">
+                    <td class="stg">10</td>
+                    <td class="hdw">pōns</td>
+                    <td class="eng">bridge</td>
+                </tr>
+                <tr id="lin531">
+                    <td class="stg">10</td>
+                    <td class="hdw">postrēmō</td>
+                    <td class="eng">finally, lastly</td>
+                </tr>
+                <tr id="lin532">
+                    <td class="stg">10</td>
+                    <td class="hdw">postrīdiē</td>
+                    <td class="eng">on the next day</td>
+                </tr>
+                <tr id="lin533">
+                    <td class="stg">10</td>
+                    <td class="hdw">praemium</td>
+                    <td class="eng">profit, reward</td>
+                </tr>
+                <tr id="lin534">
+                    <td class="stg">10</td>
+                    <td class="hdw">pulchrior</td>
+                    <td class="eng">more beautiful</td>
+                </tr>
+                <tr id="lin535">
+                    <td class="stg">10</td>
+                    <td class="hdw">pȳramis</td>
+                    <td class="eng">pyramid</td>
+                </tr>
+                <tr id="lin536">
+                    <td class="stg">10</td>
+                    <td class="hdw">rhētor</td>
+                    <td class="eng">teacher</td>
+                </tr>
+                <tr id="lin537">
+                    <td class="stg">10</td>
+                    <td class="hdw">sculptor</td>
+                    <td class="eng">sculptor</td>
+                </tr>
+                <tr id="lin538">
+                    <td class="stg">10</td>
+                    <td class="hdw">sententia</td>
+                    <td class="eng">opinion</td>
+                </tr>
+                <tr id="lin539">
+                    <td class="stg">10</td>
+                    <td class="hdw">stultior</td>
+                    <td class="eng">more stupid</td>
+                </tr>
+                <tr id="lin540">
+                    <td class="stg">10</td>
+                    <td class="hdw">stultissimus</td>
+                    <td class="eng">very stupid</td>
+                </tr>
+                <tr id="lin541">
+                    <td class="stg">10*</td>
+                    <td class="hdw">stultus</td>
+                    <td class="eng">stupid</td>
+                </tr>
+                <tr id="lin542">
+                    <td class="stg">10</td>
+                    <td class="hdw">susurrāvit</td>
+                    <td class="eng">whispered, muttered</td>
+                </tr>
+                <tr id="lin543">
+                    <td class="stg">10*</td>
+                    <td class="hdw">terra</td>
+                    <td class="eng">ground, land</td>
+                </tr>
+                <tr id="lin544">
+                    <td class="stg">10</td>
+                    <td class="hdw">ubīque</td>
+                    <td class="eng">everywhere</td>
+                </tr>
+                <tr id="lin545">
+                    <td class="stg">10</td>
+                    <td class="hdw">ūtilis</td>
+                    <td class="eng">useful</td>
+                </tr>
+                <tr id="lin546">
+                    <td class="stg">10</td>
+                    <td class="hdw">vōbīs</td>
+                    <td class="eng">to you 
+                        <i>(plural)</i>
+                    </td>
+                </tr>
+                <tr id="lin547">
+                    <td class="stg">10*</td>
+                    <td class="hdw">vōs</td>
+                    <td class="eng">you 
+                        <i>(plural)</i>
+                    </td>
+                </tr>
+                <tr id="lin548">
+                    <td class="stg">11</td>
+                    <td class="hdw">addidit</td>
+                    <td class="eng">added</td>
+                </tr>
+                <tr id="lin549">
+                    <td class="stg">11</td>
+                    <td class="hdw">amīcissimus</td>
+                    <td class="eng">very friendly</td>
+                </tr>
+                <tr id="lin550">
+                    <td class="stg">11</td>
+                    <td class="hdw">asinus</td>
+                    <td class="eng">ass, donkey</td>
+                </tr>
+                <tr id="lin551">
+                    <td class="stg">11</td>
+                    <td class="hdw">auxilium</td>
+                    <td class="eng">help</td>
+                </tr>
+                <tr id="lin552">
+                    <td class="stg">11</td>
+                    <td class="hdw">babae</td>
+                    <td class="eng">hey!</td>
+                </tr>
+                <tr id="lin553">
+                    <td class="stg">11</td>
+                    <td class="hdw">candidātus</td>
+                    <td class="eng">candidate</td>
+                </tr>
+                <tr id="lin554">
+                    <td class="stg">11</td>
+                    <td class="hdw">caudex</td>
+                    <td class="eng">blockhead, idiot</td>
+                </tr>
+                <tr id="lin555">
+                    <td class="stg">11</td>
+                    <td class="hdw">cōgitat</td>
+                    <td class="eng">considers</td>
+                </tr>
+                <tr id="lin556">
+                    <td class="stg">11</td>
+                    <td class="hdw">cōnfēcit</td>
+                    <td class="eng">finished</td>
+                </tr>
+                <tr id="lin557">
+                    <td class="stg">11</td>
+                    <td class="hdw">cōnsilium</td>
+                    <td class="eng">plan, idea</td>
+                </tr>
+                <tr id="lin558">
+                    <td class="stg">11*</td>
+                    <td class="hdw">convenit</td>
+                    <td class="eng">gathers, meets</td>
+                </tr>
+                <tr id="lin559">
+                    <td class="stg">11*</td>
+                    <td class="hdw">crēdit</td>
+                    <td class="eng">trusts, believes, has faith in</td>
+                </tr>
+                <tr id="lin560">
+                    <td class="stg">11</td>
+                    <td class="hdw">dēsistit</td>
+                    <td class="eng">stops</td>
+                </tr>
+                <tr id="lin561">
+                    <td class="stg">11</td>
+                    <td class="hdw">dīves</td>
+                    <td class="eng">rich</td>
+                </tr>
+                <tr id="lin562">
+                    <td class="stg">11</td>
+                    <td class="hdw">dīvīsor</td>
+                    <td class="eng">a man hired to bribe electors</td>
+                </tr>
+                <tr id="lin563">
+                    <td class="stg">11</td>
+                    <td class="hdw">effūgit</td>
+                    <td class="eng">escaped</td>
+                </tr>
+                <tr id="lin564">
+                    <td class="stg">11</td>
+                    <td class="hdw">ērādit</td>
+                    <td class="eng">rubs out, erases</td>
+                </tr>
+                <tr id="lin565">
+                    <td class="stg">11</td>
+                    <td class="hdw">fautor</td>
+                    <td class="eng">supporter</td>
+                </tr>
+                <tr id="lin566">
+                    <td class="stg">11*</td>
+                    <td class="hdw">favet</td>
+                    <td class="eng">favours, supports</td>
+                </tr>
+                <tr id="lin567">
+                    <td class="stg">11</td>
+                    <td class="hdw">gēns</td>
+                    <td class="eng">family</td>
+                </tr>
+                <tr id="lin568">
+                    <td class="stg">11</td>
+                    <td class="hdw">ibi</td>
+                    <td class="eng">there</td>
+                </tr>
+                <tr id="lin569">
+                    <td class="stg">11</td>
+                    <td class="hdw">illam</td>
+                    <td class="eng">that</td>
+                </tr>
+                <tr id="lin570">
+                    <td class="stg">11</td>
+                    <td class="hdw">īnscrīptiō</td>
+                    <td class="eng">inscription, notice, writing</td>
+                </tr>
+                <tr id="lin571">
+                    <td class="stg">11</td>
+                    <td class="hdw">intrō īte</td>
+                    <td class="eng">go inside!</td>
+                </tr>
+                <tr id="lin572">
+                    <td class="stg">11*</td>
+                    <td class="hdw">it</td>
+                    <td class="eng">goes</td>
+                </tr>
+                <tr id="lin573">
+                    <td class="stg">11*</td>
+                    <td class="hdw">līberālis</td>
+                    <td class="eng">generous</td>
+                </tr>
+                <tr id="lin574">
+                    <td class="stg">11</td>
+                    <td class="hdw">līberālissimus</td>
+                    <td class="eng">very generous</td>
+                </tr>
+                <tr id="lin575">
+                    <td class="stg">11</td>
+                    <td class="hdw">mēcum</td>
+                    <td class="eng">with me</td>
+                </tr>
+                <tr id="lin576">
+                    <td class="stg">11</td>
+                    <td class="hdw">mendācissimus</td>
+                    <td class="eng">very deceitful</td>
+                </tr>
+                <tr id="lin577">
+                    <td class="stg">11*</td>
+                    <td class="hdw">mūrus</td>
+                    <td class="eng">wall</td>
+                </tr>
+                <tr id="lin578">
+                    <td class="stg">11</td>
+                    <td class="hdw">nōbilis</td>
+                    <td class="eng">noble, of noble birth</td>
+                </tr>
+                <tr id="lin579">
+                    <td class="stg">11*</td>
+                    <td class="hdw">noster</td>
+                    <td class="eng">our</td>
+                </tr>
+                <tr id="lin580">
+                    <td class="stg">11</td>
+                    <td class="hdw">ōrātiō</td>
+                    <td class="eng">speech</td>
+                </tr>
+                <tr id="lin581">
+                    <td class="stg">11</td>
+                    <td class="hdw">perīculōsus</td>
+                    <td class="eng">dangerous</td>
+                </tr>
+                <tr id="lin582">
+                    <td class="stg">11*</td>
+                    <td class="hdw">placet</td>
+                    <td class="eng">it pleases, suits</td>
+                </tr>
+                <tr id="lin583">
+                    <td class="stg">11*</td>
+                    <td class="hdw">prōmittit</td>
+                    <td class="eng">promises</td>
+                </tr>
+                <tr id="lin584">
+                    <td class="stg">11</td>
+                    <td class="hdw">quīnque</td>
+                    <td class="eng">five</td>
+                </tr>
+                <tr id="lin585">
+                    <td class="stg">11</td>
+                    <td class="hdw">quō</td>
+                    <td class="eng">where, where to?</td>
+                </tr>
+                <tr id="lin586">
+                    <td class="stg">11</td>
+                    <td class="hdw">rapit</td>
+                    <td class="eng">seizes, grabs</td>
+                </tr>
+                <tr id="lin587">
+                    <td class="stg">11</td>
+                    <td class="hdw">scissus</td>
+                    <td class="eng">torn</td>
+                </tr>
+                <tr id="lin588">
+                    <td class="stg">11</td>
+                    <td class="hdw">scrīptor</td>
+                    <td class="eng">sign-writer</td>
+                </tr>
+                <tr id="lin589">
+                    <td class="stg">11</td>
+                    <td class="hdw">senior</td>
+                    <td class="eng">older, elder</td>
+                </tr>
+                <tr id="lin590">
+                    <td class="stg">11</td>
+                    <td class="hdw">sibi</td>
+                    <td class="eng">to himself</td>
+                </tr>
+                <tr id="lin591">
+                    <td class="stg">11</td>
+                    <td class="hdw">suscipit</td>
+                    <td class="eng">undertakes, takes on</td>
+                </tr>
+                <tr id="lin592">
+                    <td class="stg">11</td>
+                    <td class="hdw">tantum</td>
+                    <td class="eng">only</td>
+                </tr>
+                <tr id="lin593">
+                    <td class="stg">11</td>
+                    <td class="hdw">tēcum</td>
+                    <td class="eng">with you 
+                        <i>(singular)</i>
+                    </td>
+                </tr>
+                <tr id="lin594">
+                    <td class="stg">11</td>
+                    <td class="hdw">tertius</td>
+                    <td class="eng">third</td>
+                </tr>
+                <tr id="lin595">
+                    <td class="stg">11</td>
+                    <td class="hdw">titulus</td>
+                    <td class="eng">notice, slogan</td>
+                </tr>
+                <tr id="lin596">
+                    <td class="stg">11</td>
+                    <td class="hdw">ūtilissimus</td>
+                    <td class="eng">very useful</td>
+                </tr>
+                <tr id="lin597">
+                    <td class="stg">11*</td>
+                    <td class="hdw">vir</td>
+                    <td class="eng">man</td>
+                </tr>
+                <tr id="lin598">
+                    <td class="stg">12</td>
+                    <td class="hdw">accidit</td>
+                    <td class="eng">happened</td>
+                </tr>
+                <tr id="lin599">
+                    <td class="stg">12</td>
+                    <td class="hdw">āter</td>
+                    <td class="eng">black</td>
+                </tr>
+                <tr id="lin600">
+                    <td class="stg">12</td>
+                    <td class="hdw">cinis</td>
+                    <td class="eng">ash</td>
+                </tr>
+                <tr id="lin601">
+                    <td class="stg">12</td>
+                    <td class="hdw">dea</td>
+                    <td class="eng">goddess</td>
+                </tr>
+                <tr id="lin602">
+                    <td class="stg">12</td>
+                    <td class="hdw">dēcidit</td>
+                    <td class="eng">fell down</td>
+                </tr>
+                <tr id="lin603">
+                    <td class="stg">12</td>
+                    <td class="hdw">dēnsior</td>
+                    <td class="eng">thicker</td>
+                </tr>
+                <tr id="lin604">
+                    <td class="stg">12</td>
+                    <td class="hdw">dēnsissimus</td>
+                    <td class="eng">very thick</td>
+                </tr>
+                <tr id="lin605">
+                    <td class="stg">12</td>
+                    <td class="hdw">dēnsus</td>
+                    <td class="eng">thick</td>
+                </tr>
+                <tr id="lin606">
+                    <td class="stg">12</td>
+                    <td class="hdw">dēscendit</td>
+                    <td class="eng">comes down</td>
+                </tr>
+                <tr id="lin607">
+                    <td class="stg">12</td>
+                    <td class="hdw">dictat</td>
+                    <td class="eng">dictates</td>
+                </tr>
+                <tr id="lin608">
+                    <td class="stg">12</td>
+                    <td class="hdw">difficilis</td>
+                    <td class="eng">difficult</td>
+                </tr>
+                <tr id="lin609">
+                    <td class="stg">12</td>
+                    <td class="hdw">dubium</td>
+                    <td class="eng">doubt</td>
+                </tr>
+                <tr id="lin610">
+                    <td class="stg">12*</td>
+                    <td class="hdw">epistula</td>
+                    <td class="eng">letter</td>
+                </tr>
+                <tr id="lin611">
+                    <td class="stg">12</td>
+                    <td class="hdw">exanimātus</td>
+                    <td class="eng">unconscious</td>
+                </tr>
+                <tr id="lin612">
+                    <td class="stg">12</td>
+                    <td class="hdw">exspīrāvit</td>
+                    <td class="eng">died</td>
+                </tr>
+                <tr id="lin613">
+                    <td class="stg">12</td>
+                    <td class="hdw">fīlia</td>
+                    <td class="eng">daughter</td>
+                </tr>
+                <tr id="lin614">
+                    <td class="stg">12</td>
+                    <td class="hdw">fīnis</td>
+                    <td class="eng">end</td>
+                </tr>
+                <tr id="lin615">
+                    <td class="stg">12*</td>
+                    <td class="hdw">flamma</td>
+                    <td class="eng">flame</td>
+                </tr>
+                <tr id="lin616">
+                    <td class="stg">12</td>
+                    <td class="hdw">fūmus</td>
+                    <td class="eng">smoke</td>
+                </tr>
+                <tr id="lin617">
+                    <td class="stg">12*</td>
+                    <td class="hdw">iam</td>
+                    <td class="eng">now</td>
+                </tr>
+                <tr id="lin618">
+                    <td class="stg">12</td>
+                    <td class="hdw">iamprīdem</td>
+                    <td class="eng">a long time ago</td>
+                </tr>
+                <tr id="lin619">
+                    <td class="stg">12</td>
+                    <td class="hdw">incidit</td>
+                    <td class="eng">falls</td>
+                </tr>
+                <tr id="lin620">
+                    <td class="stg">12</td>
+                    <td class="hdw">iste</td>
+                    <td class="eng">that</td>
+                </tr>
+                <tr id="lin621">
+                    <td class="stg">12</td>
+                    <td class="hdw">iter</td>
+                    <td class="eng">journey, progress</td>
+                </tr>
+                <tr id="lin622">
+                    <td class="stg">12</td>
+                    <td class="hdw">iubet</td>
+                    <td class="eng">orders</td>
+                </tr>
+                <tr id="lin623">
+                    <td class="stg">12</td>
+                    <td class="hdw">larārium</td>
+                    <td class="eng">shrine of the household gods</td>
+                </tr>
+                <tr id="lin624">
+                    <td class="stg">12</td>
+                    <td class="hdw">larēs</td>
+                    <td class="eng">household gods</td>
+                </tr>
+                <tr id="lin625">
+                    <td class="stg">12</td>
+                    <td class="hdw">lībertās</td>
+                    <td class="eng">freedom</td>
+                </tr>
+                <tr id="lin626">
+                    <td class="stg">12</td>
+                    <td class="hdw">moribundus</td>
+                    <td class="eng">almost dead, dying</td>
+                </tr>
+                <tr id="lin627">
+                    <td class="stg">12</td>
+                    <td class="hdw">moritūrus</td>
+                    <td class="eng">going to die</td>
+                </tr>
+                <tr id="lin628">
+                    <td class="stg">12</td>
+                    <td class="hdw">nūbēs</td>
+                    <td class="eng">cloud</td>
+                </tr>
+                <tr id="lin629">
+                    <td class="stg">12</td>
+                    <td class="hdw">obstinātē</td>
+                    <td class="eng">stubbornly</td>
+                </tr>
+                <tr id="lin630">
+                    <td class="stg">12</td>
+                    <td class="hdw">parēns</td>
+                    <td class="eng">parent</td>
+                </tr>
+                <tr id="lin631">
+                    <td class="stg">12</td>
+                    <td class="hdw">pariēs</td>
+                    <td class="eng">wall</td>
+                </tr>
+                <tr id="lin632">
+                    <td class="stg">12</td>
+                    <td class="hdw">pavor</td>
+                    <td class="eng">panic</td>
+                </tr>
+                <tr id="lin633">
+                    <td class="stg">12</td>
+                    <td class="hdw">perit</td>
+                    <td class="eng">dies, perishes</td>
+                </tr>
+                <tr id="lin634">
+                    <td class="stg">12</td>
+                    <td class="hdw">pervēnit</td>
+                    <td class="eng">reached, arrived at</td>
+                </tr>
+                <tr id="lin635">
+                    <td class="stg">12</td>
+                    <td class="hdw">plūrimus</td>
+                    <td class="eng">most</td>
+                </tr>
+                <tr id="lin636">
+                    <td class="stg">12</td>
+                    <td class="hdw">pretiōsus</td>
+                    <td class="eng">expensive, precious</td>
+                </tr>
+                <tr id="lin637">
+                    <td class="stg">12</td>
+                    <td class="hdw">proximus</td>
+                    <td class="eng">nearest</td>
+                </tr>
+                <tr id="lin638">
+                    <td class="stg">12</td>
+                    <td class="hdw">recūsāvit</td>
+                    <td class="eng">refused</td>
+                </tr>
+                <tr id="lin639">
+                    <td class="stg">12</td>
+                    <td class="hdw">respīrāvit</td>
+                    <td class="eng">recovered consciousness</td>
+                </tr>
+                <tr id="lin640">
+                    <td class="stg">12</td>
+                    <td class="hdw">ruīna</td>
+                    <td class="eng">ruin, wreckage</td>
+                </tr>
+                <tr id="lin641">
+                    <td class="stg">12</td>
+                    <td class="hdw">sacrificium</td>
+                    <td class="eng">offering, sacrifice</td>
+                </tr>
+                <tr id="lin642">
+                    <td class="stg">12</td>
+                    <td class="hdw">scit</td>
+                    <td class="eng">knows</td>
+                </tr>
+                <tr id="lin643">
+                    <td class="stg">12</td>
+                    <td class="hdw">sēmirutus</td>
+                    <td class="eng">half-collapsed</td>
+                </tr>
+                <tr id="lin644">
+                    <td class="stg">12</td>
+                    <td class="hdw">sēnsim</td>
+                    <td class="eng">slowly, gradually</td>
+                </tr>
+                <tr id="lin645">
+                    <td class="stg">12*</td>
+                    <td class="hdw">sentit</td>
+                    <td class="eng">feels</td>
+                </tr>
+                <tr id="lin646">
+                    <td class="stg">12</td>
+                    <td class="hdw">sine</td>
+                    <td class="eng">without</td>
+                </tr>
+                <tr id="lin647">
+                    <td class="stg">12</td>
+                    <td class="hdw">sonus</td>
+                    <td class="eng">sound, noise</td>
+                </tr>
+                <tr id="lin648">
+                    <td class="stg">12</td>
+                    <td class="hdw">superfuit</td>
+                    <td class="eng">survived</td>
+                </tr>
+                <tr id="lin649">
+                    <td class="stg">12*</td>
+                    <td class="hdw">templum</td>
+                    <td class="eng">temple</td>
+                </tr>
+                <tr id="lin650">
+                    <td class="stg">12</td>
+                    <td class="hdw">tremor</td>
+                    <td class="eng">trembling, tremor</td>
+                </tr>
+                <tr id="lin651">
+                    <td class="stg">12</td>
+                    <td class="hdw">tremuit</td>
+                    <td class="eng">trembled, shook</td>
+                </tr>
+                <tr id="lin652">
+                    <td class="stg">12</td>
+                    <td class="hdw">trīste</td>
+                    <td class="eng">sadly</td>
+                </tr>
+                <tr id="lin653">
+                    <td class="stg">12</td>
+                    <td class="hdw">tūtus</td>
+                    <td class="eng">safe</td>
+                </tr>
+                <tr id="lin654">
+                    <td class="stg">12</td>
+                    <td class="hdw">valet</td>
+                    <td class="eng">feels well</td>
+                </tr>
+                <tr id="lin655">
+                    <td class="stg">12</td>
+                    <td class="hdw">vīlicus</td>
+                    <td class="eng">farm manager, bailiff</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
